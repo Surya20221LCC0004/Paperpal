@@ -1,0 +1,113 @@
+/* Overall page with blue sky background */
+.editorial-page {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #dbefff, #ffffff);
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  min-height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
+  background-repeat: repeat;
+}
+
+/* Centered container with glassmorphism */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 127, 255, 0.1);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease;
+  border: 1px solid rgba(0, 170, 255, 0.2);
+}
+
+/* Main Heading with gradient text */
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #007fff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #00aaff;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Sub Headings */
+h2 {
+  font-size: 28px;
+  margin-top: 50px;
+  color: #00509d;
+  font-weight: 600;
+  position: relative;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+h2::before {
+  content: '🌤️';
+  font-size: 20px;
+  margin-right: 10px;
+  color: #00aaff;
+}
+
+/* Unordered List */
+ul {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: '☁️';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 16px;
+}
+
+/* Smooth entrance animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

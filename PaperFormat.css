@@ -1,0 +1,28 @@
+.paper-format-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background: #0056b3;
+  }
+  

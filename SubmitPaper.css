@@ -1,0 +1,113 @@
+.submit-paper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dceeff, #e9f6ff);
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.submit-paper-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.submit-paper-card h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #004080;
+  font-weight: 700;
+  text-align: center;
+}
+
+.submit-paper-card form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #003366;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.submit-paper-card form input,
+.submit-paper-card form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  background-color: #f8fbff;
+  transition: border 0.3s ease;
+}
+
+.submit-paper-card form input:focus,
+.submit-paper-card form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.submit-paper-card form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-paper-card form button {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submit-paper-card form button:hover {
+  background-color: #0056b3;
+}
+
+.form-message {
+  margin-top: 20px;
+  font-weight: 500;
+  color: #007bff;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .submit-paper-card {
+    padding: 25px;
+  }
+
+  .submit-paper-card h2 {
+    font-size: 24px;
+  }
+
+  .submit-paper-card form button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}

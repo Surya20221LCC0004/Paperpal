@@ -1,0 +1,128 @@
+/* General Body and Layout Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Content Container */
+.content-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #333;
+  background-color: white; /* White background for better contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: left; /* Aligning text to the left for readability */
+}
+
+/* Title Styling */
+.content-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; /* Center-aligning the main title */
+  color: #004080; /* Dark blue color for the title */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Subtitle and Section Headers */
+.content-container h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0073e6; /* Blue color for subsections */
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 6px;
+  text-align: left; /* Left-aligning section headers */
+}
+
+/* Paragraphs */
+.content-container p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555; /* Dark gray text for better readability */
+  text-align: justify; /* Justify text for even spacing */
+}
+
+/* Lists */
+.content-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  color: #555; /* Gray for list items */
+}
+
+.content-container ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  text-align: left; /* Ensure list items align left */
+}
+
+/* Links */
+.content-container a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.content-container a:hover {
+  text-decoration: underline;
+}
+
+/* Card Elements for Step-by-step Process */
+.step {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #f1f8ff;
+  border-left: 4px solid #0073e6;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: left; /* Ensure the content inside each step card is left-aligned */
+}
+
+.step:hover {
+  background-color: #e6f0ff; /* Light blue background on hover */
+}
+
+/* Card Heading Inside Step */
+.step h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .content-container h1 {
+    font-size: 2rem; /* Adjusting font size for mobile */
+  }
+
+  .content-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .content-container p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .step {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  /* Ensure the text remains left-aligned on smaller screens */
+  .step h4 {
+    font-size: 1.3rem;
+  }
+}
